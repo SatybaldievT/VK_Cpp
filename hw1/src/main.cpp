@@ -3,8 +3,24 @@
 #include <sstream>
 #include <string>
 #include <vector>
-
-std::string get_SUB(const std::string& str, int n, char sep)
+int safe_stoi(const std::string& str)
+{
+    try
+    {
+        return std::stoi(str);
+    }
+    catch (const std::invalid_argument& e)
+    {
+        std::cerr << "Invalid argument: " << e.what() << '\n';
+    }
+    catch (const std::out_of_range& e)
+    {
+        std::cerr << "Out of range: " << e.what() << '\n';
+    }
+    // возврат значения по умолчанию в случае ошибки
+    return 0;
+}
+std::string get_SUB(const std::string &str, int n, char sep)
 {
     std::istringstream iss(str);
     std::string field;
@@ -53,8 +69,9 @@ public:
         {
 
             vector.push_back(next);
-            id = stoi(vector[0].substr(2, 7));
-            while (getline(fname, next) && stoi(next.substr(2, 7)) == id)
+
+            id = safe_stoi(vector[0].substr(2, 7));
+            while (getline(fname, next) && safe_stoi(next.substr(2, 7)) == id)
             {
 
                 vector.push_back(next);
@@ -71,16 +88,7 @@ public:
     }
     std::string find(std::string tcons)
     {
-        int id_num = 0;
-        try
-        {
-            id_num = std::stoi(tcons.substr(2, 7));
-        }
-        catch (std::invalid_argument const &e)
-        {
-            std::cerr << "Error: argument tcons is not an integer" << std::endl;
-            return "FAIL";
-        }
+        int id_num = safe_stoi(tcons.substr(2, 7));
 
         while (tcons.size() >= 7 && id_num >= id)
         {
@@ -93,24 +101,24 @@ public:
                         return vector[i];
                     }
                 }
-                return "FAIL";
+                return "";
             }
             else
             {
                 if (!get_next())
-                    return "FAIL";
+                    return "";
                 try
                 {
-                    id_num = std::stoi(tcons.substr(2, 7));
+                    id_num = safe_stoi(tcons.substr(2, 7));
                 }
                 catch (std::invalid_argument const &e)
                 {
                     std::cerr << "Error: argument tcons is not an integer" << std::endl;
-                    return "FAIL";
+                    return "";
                 }
             }
         }
-        return "FAIL";
+        return "";
     }
 };
 
@@ -128,27 +136,30 @@ bool isValidArguments(int argc)
 std::string findNameNumber(std::ifstream &fname, const std::string &name)
 {
     std::string name_num;
-    if (fname.is_open())
+    if (!fname.is_open())
     {
-        std::string line;
-        while (getline(fname, line))
+        return "";
+    }
+
+    std::string line;
+    while (getline(fname, line))
+    {
+        if (name == get_SUB(line, 2, '\t'))
         {
-            if (name == get_SUB(line, 2, '\t'))
+            if (get_SUB(line, 5, '\t').substr(0, 3) == "act")
             {
-                if (get_SUB(line, 5, '\t').substr(0, 3) == "act")
-                {
-                    name_num = line.substr(0, 9);
-                    break;
-                }
+                name_num = line.substr(0, 9);
+                break;
             }
         }
     }
+
     return name_num;
 }
 std::string findAlias(line_class &akas, const std::string &name_num)
 {
     std::string buff = akas.find(name_num);
-    if (buff != "FAIL")
+    if (buff != "")
     {
         for (int i = 0; i < akas.vector.size(); i++)
         {
@@ -161,16 +172,16 @@ std::string findAlias(line_class &akas, const std::string &name_num)
         }
         return get_SUB(buff, 3, '\t');
     }
-    return "FAIL";
+    return "";
 }
 std::string findBasic(line_class &bas, const std::string &name_num)
 {
     std::string buff = bas.find(name_num);
-    if (buff != "FAIL" && get_SUB(buff, 5, '\t') == "0")
+    if (buff != "" && get_SUB(buff, 5, '\t') == "0")
     {
         return buff;
     }
-    return "FAIL";
+    return "";
 }
 void printActressName(line_class &akas, line_class &bas, line_class &princ, const std::string &name_num)
 {
@@ -186,16 +197,16 @@ void printActressName(line_class &akas, line_class &bas, line_class &princ, cons
                     break;
                 }
 
-                std::string prinid ( get_SUB(prin, 1, '\t'));
-                std::string prin_numid (get_SUB(prin, 3, '\t'));
-                std::string prin_act_atr (get_SUB(prin, 4, '\t').substr(0, 3));
+                std::string prinid(get_SUB(prin, 1, '\t'));
+                std::string prin_numid(get_SUB(prin, 3, '\t'));
+                std::string prin_act_atr(get_SUB(prin, 4, '\t').substr(0, 3));
                 if (name_num == prin_numid && prin_act_atr == "act")
                 {
                     std::string basic = findBasic(bas, prinid);
-                    if (basic != "FAIL")
+                    if (basic != "")
                     {
                         std::string alias = findAlias(akas, prinid);
-                        if (alias != "FAIL")
+                        if (alias != "")
                         {
                             std::cout << alias << std::endl;
                         }
