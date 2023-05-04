@@ -1,0 +1,1 @@
+-I"D:/VK_CPP/VK_Cpp/test/googletest-1.13.0/googlemock/include" -I"D:/VK_CPP/VK_Cpp/test/googletest-1.13.0/googlemock" -isystem "D:/VK_CPP/VK_Cpp/test/googletest-1.13.0/googletest/include" -isystem "D:/VK_CPP/VK_Cpp/test/googletest-1.13.0/googletest"

@@ -1,0 +1,92 @@
+[
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/dz1.dir/includes_CXX.rsp -g -o CMakeFiles\\dz1.dir\\src\\main.cpp.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\src\\main.cpp",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/src/main.cpp"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/lib/utils",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/utils.dir/includes_CXX.rsp -g -o CMakeFiles\\utils.dir\\src\\utils.cpp.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\lib\\utils\\src\\utils.cpp",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/lib/utils/src/utils.cpp"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\context.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\context.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/context.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\init.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\init.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/init.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\input.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\input.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/input.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\monitor.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\monitor.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/monitor.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\vulkan.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\vulkan.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/vulkan.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\window.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\window.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/window.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_init.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_init.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_init.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_joystick.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_joystick.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_monitor.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_monitor.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_time.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_time.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_time.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_thread.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_thread.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_thread.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\win32_window.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\win32_window.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/win32_window.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\wgl_context.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\wgl_context.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/wgl_context.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\egl_context.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\egl_context.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/egl_context.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glfw-3.3.8/src",
+  "command": "C:\\MinGW\\bin\\gcc.exe -DUNICODE -DWINVER=0x0501 -D_GLFW_USE_CONFIG_H -D_UNICODE @CMakeFiles/glfw.dir/includes_C.rsp -g -Wall -std=gnu99 -Wdeclaration-after-statement -o CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glfw-3.3.8\\src\\osmesa_context.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glfw-3.3.8/src/osmesa_context.c"
+},
+{
+  "directory": "D:/VK_CPP/VK_Cpp/hw1/build/external/glad",
+  "command": "C:\\MinGW\\bin\\gcc.exe  @CMakeFiles/glad.dir/includes_C.rsp -g -o CMakeFiles\\glad.dir\\src\\glad.c.obj -c D:\\VK_CPP\\VK_Cpp\\hw1\\external\\glad\\src\\glad.c",
+  "file": "D:/VK_CPP/VK_Cpp/hw1/external/glad/src/glad.c"
+}
+]
